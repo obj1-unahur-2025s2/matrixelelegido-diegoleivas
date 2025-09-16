@@ -34,3 +34,13 @@ object trinity {
     
   
 }
+
+
+object nave {
+    const  pasajeros = [morfeo , trinity ]
+
+    method cantidadPasajeros() = pasajeros.size()
+    method pasajerosConMayorVitalidad()=pasajeros.max({p=>p.vitalidad()})
+    method estaEquilibrada() =  pasajeros.fold(0, {p=>p.vitalidad() < self.pasajerosConMayorVitalidad()/2})
+
+}

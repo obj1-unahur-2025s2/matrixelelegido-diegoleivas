@@ -20,9 +20,27 @@ describe "test a neo " {
    test "vitalidad y cansancio de morfeo " {
     morfeo.saltar()
     assert.equals(7,morfeo.vitalidad())
+    // terminar , crear metoo esta cansado
     
+}
 
+ test "  Trinity  no es el elegido" {
+    assert.notThat(trinity.esElElegido())
   }
+
+   test "vitalidad inicial de Trinity    " {
+    assert.equals(0, morfeo.vitalidad())
+  }
+
+  test "vitalidad inicial de Trini    " {
+    trinity.saltar()
+    trinity.saltar()
+
+  
+    }
+
+
+  
 
 
 
